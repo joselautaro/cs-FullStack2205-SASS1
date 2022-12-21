@@ -3,27 +3,55 @@
   padding: 0; }
 
 header {
-  background-color: #a17a32; }
+  background-color: crimson; }
   header nav {
-    text-align: center; }
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    flex-direction: row-reverse; }
     header nav a {
-      text-decoration: none; }
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+      color: #fafafa;
+      font-weight: 700; }
+      header nav a:hover {
+        color: #525558; }
 
-h1 {
-  text-align: center;
-  font-family: "Arial black"; }
+.logo {
+  font-family: cursive;
+  font-size: 15px; }
 
-section {
-  background-color: cadetblue;
-  height: 900px;
+main {
   width: 100%; }
-  section div {
-    width: 900px;
-    border: 3px solid black;
-    margin: 0 auto; }
-    section div h2 {
-      text-align: center;
-      font-family: "Arial black"; }
-    section div p {
-      font-family: "Arial black";
-      text-align: justify; }
+  main h1 {
+    text-align: center; }
+  main section {
+    width: 100%; }
+    main section .padre-container {
+      width: 100%;
+      background-color: #e4fff9;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      main section .padre-container .item-hijo {
+        width: 250px;
+        border: 1px solid black;
+        height: 250px;
+        margin: 5px;
+        text-align: center;
+        border-radius: 4px; }
+        main section .padre-container .item-hijo:hover {
+          box-shadow: 5px 5px 20px black;
+          background-color: #75c7ff; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #68da3e;
+  margin-top: 1px; }
+  footer footer a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }

@@ -1,24 +1,35 @@
-@import './variables';
+// @import './variables';
 
-h1{
+main {
+  width: 100%;
+
+  h1 {
     text-align: center;
-    font-family: $font-family;
-}
-section{
-    background-color: cadetblue;
-    height: 900px;
+  }
+
+  section {
     width: 100%;
-    div{
-      width: 900px;
-      border: 3px solid black;
-      margin: 0 auto;
-      h2{
+
+    .padre-container {
+      width: 100%;
+      background-color: #e4fff9;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .item-hijo {
+        width: 250px;
+        border: 1px solid black;
+        height: 250px;
+        margin: 5px;
         text-align: center;
-        font-family: $font-family;
-      }
-      p{
-        font-family: $font-family;
-        text-align: justify;
+        border-radius: 4px;
+
+        &:hover {
+          box-shadow: 5px 5px 20px black;
+          background-color: #75c7ff;
+        }
       }
     }
+  }
 }
